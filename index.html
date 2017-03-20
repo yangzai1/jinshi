@@ -1,0 +1,223 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    
+    <!-- [portable options] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+    <title>金实盈信手机端后台</title>
+        
+    <!-- [loading stylesheets] -->    
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/flexslider.css" />    
+
+    <!-- [loading scripts] -->   
+		
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        
+    <script type="text/javascript">
+			var $ = jQuery.noConflict();
+			$(window).load(function() {
+				$('#slider').flexslider({
+					animation: "slide",
+					directionNav: true,
+					animationLoop: false,
+					controlNav: false, 
+					slideToStart: 1,
+					slideshow: true,
+					animationDuration: 300,
+					start: function(){
+						 $('#slider').animate({opacity: 1}, 750);
+					},
+				});
+			});
+	</script>
+    </head>
+
+    <body>
+
+    	<section id="page-wrapper">
+        
+        	<section id="menu-wrapper">
+            	
+                <div id="menu-search">
+                	<input id="menu-search-input-text" type="text" placeholder="搜索" />
+					<input id="menu-search-input-submit" type="submit" value="" />
+                </div>
+            
+                <ul class="menu">
+                    
+                    <li class="icon home">
+                        <a href="index.html">
+                            <span class="menu-li-title">客户管理</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+                    
+                    <li class="icon box">
+                        <a href="javascript:;"><!-- portfolio.html -->
+                            <span class="menu-li-title">公司贷款定价</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+                    
+                    <li class="icon info">
+                        <a href="javascript:;"><!-- aboutus.html -->
+                            <span class="menu-li-title">小微贷款定价</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+                    
+                    <li id="a-submenu-1" class="icon plus">
+                        <a href="javascript:;">
+                            <span class="menu-li-title">零售贷款定价</span>
+                            <img class="menu-li-arrow-submenu" src="img/icons/submenu.png" alt="" />
+                        </a>
+                        
+                        <ul id="submenu-1">
+
+                        	<li>
+                                <a href="index.html">
+                                    <span class="menu-li-title">存款定价</span>
+                                    <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="index.html">
+                                    <span class="menu-li-title">报表管理</span>
+                                    <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li> <!-- #submenu-1 -->
+ 
+                    <li class="icon blog">
+                        <a href="javascript:;"><!-- blog.html -->
+                            <span class="menu-li-title">存款定价</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+                    
+                    <li class="icon book">
+                        <a href="javascript:;"><!-- typography.html -->
+                            <span class="menu-li-title">报表管理</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+                    
+                    <li class="icon mail">
+                        <a href="javascript:;"><!-- contact.html -->
+                            <span class="menu-li-title">维度管理</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+                    
+                    <li class="icon star">
+                        <a href="javascript:;"><!-- www.jq22.com -->
+                            <span class="menu-li-title">系统管理</span>
+                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                        </a>
+                    </li>
+
+                </ul> <!-- .menu -->
+            </section> <!-- #menu-wrapper -->
+        
+        	<section id="content-wrapper">
+                	
+                <section id="header">
+                
+                    <div id="header-left">
+                        <a href="javascript:;" id="a-menu"><img src="img/icons/menu.png" alt="menu" /></a>                    </div>
+                    
+                    <div id="header-title">
+                        <h1>金实盈信</h1>
+                    </div>
+                    
+                    <div id="header-right">
+                        <a href="javascript:;" id="header-search-link"><img src="img/icons/share.png" alt="Search" /></a>                    
+                    </div>
+                </section> <!-- #header -->
+                
+                <section id="slider">
+                    <ul class="slides">
+                        <li><img src="img/slider/banner.jpg" alt="关于我们" /></li>
+                        <li><img src="img/slider/banner2.jpg" alt="专家团队" /></li>
+                        <li><img src="img/slider/banner3.jpg" alt="业务领域" /></li>
+                        <li><img src="img/slider/banner4.jpg" alt="公司案例" /></li>
+                        <li><img src="img/slider/banner5.jpg" alt="联系我们" /></li>
+                        <li><img src="img/slider/banner6.jpg" alt="欢迎加入我们" /></li>
+                    </ul>
+                </section> <!-- #slider -->
+                
+                <article>
+                
+                	<div class="wrapper">
+                    
+                    	<span class="post-date">27 JUNE 2015, 14:13</span>
+                        <h2>欢迎进入金实盈信</h2>
+                        
+                        <p class="prologue">欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信</p>
+                    </div>
+                    
+                    <table class="contact">
+                    	<tr>
+                        	<td><a href="javascript:;"><img src="img/icons/big-tel.png" alt="" /></a></td>
+                            <td><a href="javascript:;"><img src="img/icons/big-mail.png" alt="" /></a></td>
+                            <td><a href="javascript:;" ><img src="img/icons/big-web.png" alt="" /></a></td>
+                            <td><a href="javascript:;" ><img src="img/icons/big-cart.png" alt="" /></a></td>
+                        </tr>
+                        
+                        <tr class="info">
+                        	<td colspan="4"><img src="img/icons/small-web.png" alt="" /><span><a href="http://javascript:;">https://www.baidu.com/</a></span></td>
+                        </tr>
+                        
+                        <tr class="info">
+                        	<td colspan="4"><img src="img/icons/small-mail.png" alt="" /><span>https://www.baidu.com/</span></td>
+                        </tr>
+                        
+                        <tr class="info">
+                        	<td colspan="4"><img src="img/icons/small-home.png" alt="" /><span>北京市朝阳区东三环北路丙2号天元港中心B座1501室</span></td>
+                        </tr>
+                    </table>
+                    
+                    <div class="wrapper">
+                        
+                        <p>欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信 <strong>欢迎进入金实盈信</strong> 欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信
+                        </p>
+						<p>欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信<a href="javascript:;" >欢迎进入金实盈信</a>欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信 <strong>欢迎进入金实盈信</strong></p>
+
+						<p>
+                            <a href="javascript:;"><!-- blog.html --><input type="button" value="系统公告" /></a>
+                            <a href="https://www.baidu.com"><input type="button" value="官方网站" /></a>
+                        </p>
+                    </div>
+                    <div class="wrapper-kong"></div>
+                </article> <!-- #post -->
+
+               <!--  <section id="footer">
+                    <div id="footer-left">
+                        <span>Powered by jq22.com Copyright &copy; 2014 - 2015</span>                    </div>
+                    
+                    <div id="footer-right">
+                        <span>www.jq22.com</span>                    </div>    
+                </section>  -->
+            </section> <!-- #content-wrapper -->
+    	</section> <!-- #page-wrapper -->
+        <div class="houtai-footer1"></div>
+        <div class="houtai-footer">
+            <ul class="houtai-box">
+                <li class="houtai-flex"><a href="javascript:;">客户信息查询</a></li>
+                <li class="houtai-flex"><a href="javascript:;">货款定价单查询</a></li>
+                <li class="houtai-flex"><a href="javascript:;">客户分类管理</a></li>
+                <li class="houtai-flex"><a href="javascript:;">个人中心</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

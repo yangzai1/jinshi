@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .clearfix:after { 
+            content: "";
+            display: block; 
+            clear: both;
+        }
+        .clearfix { 
+            zoom: 1;
+        }
+       .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        #houtai-footer-content{
+          margin-top: 40px;
+        }
+        #houtai-footer-content h5{
+            color:#00507E;
+            line-height: 20px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .houtai-footer-content-ul{
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        
+        .houtai-footer-content-ul li{
+            margin-left: 10px;
+             float: left;
+        }
+        .houtai-footer-content-ul input{
+            line-height:20px;
+            border-radius: 10px;
+            outline:none;
+        }
+        #houtai-footer-content span{
+            text-align: center;
+            line-height:20px;
+            display: inline;
+            border:1px solid #ACC0D9;
+            color: #00507E;
+            background: #F2F7FB;
+            border-radius: 10%;
+            font-size: 16px;
+            font-family: "微软雅黑";
+        }
+        .houtai-footer-content-ul2 li{
+            margin-left: 10px;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+        } 
+        .houtai-footer-content-ul2{
+            margin-bottom: 5px;
+        }
+        .houtai-footer-content-ul2 li input{
+            width: 40px;
+            border-radius: 10px;
+            outline:none;
+            font-size: 12px;
+            background: #F2F7FB;
+        }
+        .houtai-footer-content-ul3{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .houtai-footer-content-ct{
+            margin:5px 0 10px 0;
+            font-size: 16px;
+            color: red;
+            text-align: center;
+        }
+        .ul3-li{
+            border:1px solid #5EA7C8;
+            text-align: center;
+            line-height: 20px;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            color:#166297;
+        }
+        .houtai-footer-content-ul4{
+            border:1px solid #CDE7F8;
+        }
+        .ul4-li{
+            text-align: center;
+            float: left;
+            margin-left: 5px;
+            font-size: 12px;
+            color:#166297;
+        }
+        .ul4-li input{
+            width:50px;
+            margin-left: 5px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+  <div id="houtai-footer-content">
+        <h5 class="">请输入查询条件</h5>
+        <hr/>
+      <!--top-->
+      <ul class="houtai-footer-content-ul clearfix">
+          <li>
+            <span>附件名称</span>
+            <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+          </li>
+          <li>
+            <span>附件名称</span>
+            <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+          </li>
+          <li>
+            <span>上传日期</span>
+            <input type="date" />
+          </li>
+      </ul>
+      <!--cont-->
+      <ul class="houtai-footer-content-ul2 clearfix">
+          <li>
+            <input type="submit" name="btn" id="btn" value="查询" class="" />
+         </li>
+         <li>
+            <input type="submit" name="btn" id="btn" value="新增" class="" />
+         </li>
+         <li>
+            <input type="submit" name="btn" id="btn" value="修改" class="" />
+         </li>
+         <li>
+            <input type="submit" name="btn" id="btn" value="删除" class="" />
+         </li>
+      </ul>
+      <!--bottom-->
+      <ul class="houtai-footer-content-ul3 clearfix">
+          <li class="ul3-li">附件名称</li>
+          <li class="ul3-li">上传日期</li>
+          <li class="ul3-li">上传人</li>
+          <li class="ul3-li">文件类型</li>
+          <li class="ul3-li">文件大小(K)</li>
+          <li class="ul3-li">操作</li>
+      </ul>
+      <div class="houtai-footer-content-ct">无符合条件的记录！</div>
+      <ul class="houtai-footer-content-ul4 clearfix">
+          <li class="ul4-li">
+                <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+          </li>
+          <li class="ul4-li">
+                <input type="button" value="上一页" class="houtai-footer-content-btn1" />
+          </li>
+          <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
+          <li class="ul4-li">
+                <input type="button" value="下一页" class="houtai-footer-content-btn2" />
+          </li>
+          <li class="ul4-li">
+                <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
+          </li>
+          <li class="ul4-li">
+                <input type="text" value="0" class="houtai-footer-content-btn4" />
+          </li>
+          <li class="ul4-li">
+            <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
+          </li>
+          <li class="ul4-li">
+            每页
+            <input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />  
+            行
+          </li>
+      </ul>
+  </div> 
+</body>
+</html>

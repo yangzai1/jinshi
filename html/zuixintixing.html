@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最新提醒</title>
+    <style>
+        *{margin: 0；padding:0;list-style: none; text-decoration:none; }
+        .clearfix:after { 
+            content: "";
+            display: block; 
+            clear: both;
+        }
+        .clearfix { 
+            zoom: 1;
+        }
+       .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .houtai-footer-content3 h5{
+            color: #166297;
+            border:1px solid #ACC0D9;
+        }
+        .houtai-footer-content3-ul li{
+            float: left;
+            margin-left: 5px;
+        } 
+        .houtai-footer-content3-ul li span{
+            display: inline-block;
+            width: 178px;
+            line-height: 22px;
+            text-align: center;
+            color:#00507E;
+            font-size: 12px;
+            background: #edecec;
+        }
+        .houtai-footer-content3-ul li input{
+            margin-left: 5px;
+            width: 135px;
+        }
+        .houtai-footer-content3-ul2 li{
+            float: left;
+            margin-left: 10px;
+        }
+        .houtai-footer-content-div-ul li{
+            border: 1px solid #5EA7C8;
+        }
+        .houtai-footer-content-div-ul{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .div-ul-li{
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            color:#166297;
+            text-align: center;
+            line-height: 20px;
+        }
+        .content3-fix-box li{
+            border: 1px solid #5EA7C8;
+            border-top: none;
+            text-align: center;
+            line-height: 20px;
+        }
+        .content3-fix-box{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .fix-tr{
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        /* 重复的样式 */
+        .houtai-footer-content-ul4{
+            border:1px solid #CDE7F8;
+            background: #C9DFFF;
+        }
+        .ul4-li{
+            text-align: center;
+            float: left;
+            margin-left: 5px;
+            font-size: 12px;
+            color:#166297;
+        }
+        .ul4-li input{
+            width:50px;
+            margin-left: 5px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="houtai-footer-content3">
+        <h5>输入查询条件</h5>
+           <ul class="houtai-footer-content3-ul clearfix">
+                <li><span>标题</span><input type="text" /></li>
+                <li><span>作者</span><input type="text" /></li>
+           </ul> 
+           <ul class="houtai-footer-content3-ul clearfix">
+                <li><label for="meeting"><span>开始日期</span></label><input id="meeting" type="date" value="2017-03-22"/></li>
+                <li><label for="meeting"><span>截至日期</span></label><input id="meeting" type="date" value="2017-03-22"/></li>
+           </ul> 
+           <ul class="houtai-footer-content3-ul2 clearfix">
+                <li><input type="button" value="查询" /></li>
+                <li><input type="button" value="新增" /></li>
+                <li><input type="button" value="修改" /></li>
+                <li><input type="button" value="删除" /></li>
+                <li><input type="button" value="查看" /></li>
+                <li><input type="button" value="树状结构" /></li>
+           </ul>
+           <div class="houtai-footer-content3-div clearfix">
+                <ul class="houtai-footer-content-div-ul clearfix">
+                  <li class="div-ul-li">标题</li>
+                  <li class="div-ul-li">作者</li>
+                  <li class="div-ul-li">日期</li>
+                  <li class="div-ul-li">状态</li>
+                </ul>
+                <div class="houtai-footer-content3-div-biao">
+                    <ul class="content3-fix-box clearfix">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                    </ul>
+                    <ul class="content3-fix-box">
+                        <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                        <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                        <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                        <li class="fix-tr"><a href="javascript:;"></a>已读</li>
+                    </ul>
+                </div>
+           </div>
+           <ul class="houtai-footer-content-ul4 clearfix">
+                <li class="ul4-li">
+                    <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+                </li>
+                <li class="ul4-li">
+                    <input type="button" value="上一页" class="houtai-footer-content-btn1" />
+                </li>
+                <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
+                <li class="ul4-li">
+                    <input type="button" value="下一页" class="houtai-footer-content-btn2" />
+                </li>
+                <li class="ul4-li">
+                    <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
+                </li>
+                <li class="ul4-li">
+                    <input type="text" value="0" class="houtai-footer-content-btn4" />
+                </li>
+                <li class="ul4-li">
+                    <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
+                </li>
+                <li class="ul4-li">
+                    每页<input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />行
+                </li>
+           </ul>
+    </div>
+</body>
+</html>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
         
-    <title>金实盈信管理平台</title>
+    <title>金实盈信移动端</title>
         
     <!-- [loading stylesheets] -->    
     <link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -36,187 +36,314 @@
 					},
 				});
 			});
-	</script>
-    </head>
+	  </script>
+</head>
 
     <body>
 
     	<section id="page-wrapper">
         
         	<section id="menu-wrapper">
-            	
                 <div id="menu-search">
                 	<input id="menu-search-input-text" type="text" placeholder="搜索" />
-					<input id="menu-search-input-submit" type="submit" value="" />
+					        <input id="menu-search-input-submit" type="submit" value="" />
                 </div>
-            
                 <ul class="menu">
                     
-                    <li class="icon home">
+                    <li class="icon home"><!-- 客户管理 -->
                         <a href="index.html">
-                            <span class="menu-li-title">客户管理</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">客户管理</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
-                    <li class="icon box">
+                    <li class="icon box"><!-- 公司贷款定价 -->
                         <a href="javascript:;"><!-- portfolio.html -->
-                            <span class="menu-li-title">公司贷款定价</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">公司贷款定价</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
-                    <li class="icon info">
+                    <li class="icon info"><!-- 小微贷款定价 -->
                         <a href="javascript:;"><!-- aboutus.html -->
-                            <span class="menu-li-title">小微贷款定价</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">小微贷款定价</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
-                    <li id="a-submenu-1" class="icon plus">
+                    <li id="a-submenu-1" class="icon plus"><!--零售贷款定价-->
                         <a href="javascript:;">
-                            <span class="menu-li-title">零售贷款定价</span>
-                            <img class="menu-li-arrow-submenu" src="img/icons/submenu.png" alt="" />
+                          <span class="menu-li-title">零售贷款定价</span>
+                          <img class="menu-li-arrow-submenu" src="img/icons/submenu.png" alt="" />
                         </a>
                         
                         <ul id="submenu-1">
-
-                        	<li>
-                                <a href="index.html">
-                                    <span class="menu-li-title">存款定价</span>
-                                    <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
-                                </a>
+                        	<li><!--存款定价-->
+                              <a href="index.html">
+                                <span class="menu-li-title">存款定价</span>
+                                <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                              </a>
                             </li>
                             
-                            <li>
-                                <a href="index.html">
-                                    <span class="menu-li-title">报表管理</span>
-                                    <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
-                                </a>
-                            </li>
+                            <li><!--报表管理-->
+                              <a href="index.html">
+                                <span class="menu-li-title">报表管理</span>
+                                <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                              </a>
+                            </li> 
                         </ul>
 
                     </li> <!-- #submenu-1 -->
  
-                    <li class="icon blog">
+                    <li class="icon blog"><!--存款定价-->
                         <a href="javascript:;"><!-- blog.html -->
-                            <span class="menu-li-title">存款定价</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">存款定价</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
-                    <li class="icon book">
+                    <li class="icon book"><!--报表管理-->
                         <a href="javascript:;"><!-- typography.html -->
-                            <span class="menu-li-title">报表管理</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">报表管理</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
-                    <li class="icon mail">
+                    <li class="icon mail"><!--维度管理-->
                         <a href="javascript:;"><!-- contact.html -->
-                            <span class="menu-li-title">维度管理</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">维度管理</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
-                    <li class="icon star">
+                    <li class="icon star"><!--系统管理-->
                         <a href="javascript:;"><!-- www.jq22.com -->
-                            <span class="menu-li-title">系统管理</span>
-                            <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
+                          <span class="menu-li-title">系统管理</span>
+                          <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
-
                 </ul> <!-- .menu -->
-            </section> <!-- #menu-wrapper -->
+          </section> <!-- #menu-wrapper -->
         
-        	<section id="content-wrapper">
-                	
-                <section id="header">
+        	<section id="content-wrapper"> 	
+            <section id="header">
+            
+                <div id="header-left">
+                    <a href="javascript:;" id="a-menu">
+                      <img src="img/icons/menu.png" alt="menu" />
+                    </a>                    
+                </div>
                 
-                    <div id="header-left">
-                        <a href="javascript:;" id="a-menu">
-                            <img src="img/icons/menu.png" alt="menu" />
-                        </a>                    
-                    </div>
-                    
-                    <div id="header-title">
-                        <h1><a href="javascript:;">金实盈信</a></h1>
-                    </div>
-                    
-                    <div id="header-right">
-                        <a href="javascript:;" id="header-search-link">
-                            <img src="img/icons/share.png" alt="Search" />
-                        </a>                    
-                    </div>
-                </section> <!-- #header -->
+                <div id="header-title">
+                    <h1>
+                      <a href="javascript:;">金实盈信</a>
+                    </h1>
+                </div>
+                
+                <div id="header-right">
+                    <a href="javascript:;" id="header-search-link">
+                      <img src="img/icons/share.png" alt="Search" />
+                    </a>                    
+                </div> 
+            </section> <!-- #header -->
                 
                 <section id="slider">
-                    <ul class="slides">
-                        <li><img src="img/slider/banner.jpg" alt="关于我们" /></li>
-                        <li><img src="img/slider/banner2.jpg" alt="专家团队" /></li>
-                        <li><img src="img/slider/banner3.jpg" alt="业务领域" /></li>
-                        <li><img src="img/slider/banner4.jpg" alt="公司案例" /></li>
-                        <li><img src="img/slider/banner5.jpg" alt="联系我们" /></li>
-                        <li><img src="img/slider/banner6.jpg" alt="欢迎加入我们" /></li>
-                    </ul>
+                <!--内容区-->
+                <div class="clearfix slider-div1">
+                  <!--l-->
+                    <div class="fl parent1" id="parent1">
+                      <span>查询</span>
+                      <select id="province" name="province" class="cascade_drop_down">
+                        <option value="ID">ID查询</option>
+                        <option value="jinglirun">净利润</option>
+                        <option value="zengjiazhi">增加值</option>
+                        <option value="kehufenlei">客户分类</option>
+                        <option value="jingchouru">净息收入</option>
+                        <option value="zhongjianshouru">中间收入</option>
+                        <option value="kehuguimo">客户规模</option>
+                        <option value="chaxunkehu">查询客户名</option>
+                        <option value="daikuaiyue">贷款日余额</option>
+                        <option value="cunkuanyue">存款日余额</option>
+                        <option value="xinyongdengji">查询信用等级</option>
+                    </select>
+                    </div>
+                    <!--r-->
+                    <div id="parent" class="fl parent">
+                      <span>统计口径（元/万元）</span>
+                      <select id="province" name="province" class="cascade_drop_down">
+                        <option value="ID">-----请选择-----</option>
+                        <option value="ID">元</option>
+                        <option value="jinglirun">万元</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>客户名</th>
+                        <th>信用等级</th>
+                        <th>客户规模</th>
+                        <th>客户分类</th>
+                        <th>净利润</th>
+                        <th>净息收入</th>
+                        <th>中间收入</th>
+                        <th>曾加值</th>
+                        <th>贷款日余额</th>
+                        <th>存款日余额</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                      <tr>
+                        <td>2079904508</td>
+                        <td>小微测试客户5</td>
+                        <td>AA</td>
+                        <td>小型企业</td>
+                        <td>核心客户</td>
+                        <td></td>
+                        <td></td>
+                        <td>78,022.21</td>
+                        <td>77,754.28</td>
+                        <td>1,700,000.00</td>
+                        <td>5,178.83</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+               <!-- Bootstrap core JavaScript
+              ================================================== -->
+              <script src="jquery.slim.min.js" ></script>
+              <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script> 
+              <script src="bootstrap.min.js"></script> 
+
                 </section> <!-- #slider -->
                 
-                <article>
-                
-                	<div class="wrapper">
-                    
-                    	<span class="post-date">2017 3 20 11:29</span>
-                        <h2>欢迎进入金实盈信</h2>
-                        
-                        <p class="prologue">欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信</p>
-                    </div>
-                    
-                    <table class="contact">
-                    	<tr>
-                        	<td><a href="javascript:;"><img src="img/icons/big-tel.png" alt="" /></a></td>
-                            <td><a href="javascript:;"><img src="img/icons/big-mail.png" alt="" /></a></td>
-                            <td><a href="javascript:;" ><img src="img/icons/big-web.png" alt="" /></a></td>
-                            <td><a href="javascript:;" ><img src="img/icons/big-cart.png" alt="" /></a></td>
-                        </tr>
-                        
-                        <tr class="info">
-                        	<td colspan="4"><img src="img/icons/small-web.png" alt="" /><span><a href="http://javascript:;">https://www.baidu.com/</a></span></td>
-                        </tr>
-                        
-                        <tr class="info">
-                        	<td colspan="4"><img src="img/icons/small-mail.png" alt="" /><span>https://www.baidu.com/</span></td>
-                        </tr>
-                        
-                        <tr class="info">
-                        	<td colspan="4"><img src="img/icons/small-home.png" alt="" /><span>北京市朝阳区东三环北路丙2号天元港中心B座1501室</span></td>
-                        </tr>
-                    </table>
-                    
-                    <div class="wrapper">
-                        
-                        <p>欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信 <strong>欢迎进入金实盈信</strong> 欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信
-                        </p>
-						<p>欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信<a href="javascript:;" >欢迎进入金实盈信</a>欢迎进入金实盈信欢迎进入金实盈信欢迎进入金实盈信 <strong>欢迎进入金实盈信</strong></p>
-
-						<p>
-                            <a href="javascript:;"><!-- blog.html --><input type="button" value="系统公告" /></a>
-                            <a href="https://www.baidu.com"><input type="button" value="官方网站" /></a>
-                        </p>
-                    </div>
-                    <div class="wrapper-kong"></div>
-                </article> <!-- #post -->
-
-               <!--  <section id="footer">
-                    <div id="footer-left">
-                        <span>Powered by jq22.com Copyright &copy; 2014 - 2015</span>                    </div>
-                    
-                    <div id="footer-right">
-                        <span>www.jq22.com</span>                    </div>    
-                     </section>  -->
-            </section> <!-- #content-wrapper -->
+               <!-- 
+               内容区
+               -->
+          </section> <!-- #content-wrapper -->
+          <div class="wrapper-kong"></div>
     	</section> <!-- #page-wrapper -->
         <div class="houtai-footer1"></div>
-        <div class="houtai-footer">
+          <div class="houtai-footer">
             <ul class="houtai-box">
                 <li class="houtai-flex"><a href="javascript:;">客户管理</a></li>
                 <li class="houtai-flex"><a href="javascript:;">系统管理</a></li>
@@ -227,6 +354,7 @@
                         <li id="on">
                             <a href="javascript:;">修改密码</a>
                             <!--修改密码-->
+                            <!-- 
                             <div id="pass">
                                 <ul>
                                     <li>
@@ -249,85 +377,89 @@
                                         <p>*1.密码6~16个字符，包括字母、数字、特殊符号，区分大小写。</p>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> 
+                            -->
                         </li>
                         <li>
                             <a href="javascript:;">文件管理</a>
                             <!--文件目录-->
+                            <!-- 
                             <div id="houtai-footer-content">
-                                  <h5 class="">请输入查询条件</h5>
-                                  <hr/>
-                                  <!--top-->
-                                  <ul class="houtai-footer-content-ul clearfix">
-                                      <li>
-                                        <span>附件名称</span>
-                                        <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+                                   <h5 class="">请输入查询条件</h5>
+                                   <hr/>
+                                   top
+                                   <ul class="houtai-footer-content-ul clearfix">
+                                       <li>
+                                         <span>附件名称</span>
+                                         <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+                                       </li>
+                                       <li>
+                                         <span>附件名称</span>
+                                         <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+                                       </li>
+                                       <li>
+                                         <span>上传日期</span>
+                                         <input type="date" />
+                                       </li>
+                                   </ul>
+                                   cont
+                                   <ul class="houtai-footer-content-ul2 clearfix">
+                                       <li>
+                                         <input type="submit" name="btn" id="btn" value="查询" class="" />
                                       </li>
                                       <li>
-                                        <span>附件名称</span>
-                                        <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+                                         <input type="submit" name="btn" id="btn" value="新增" class="" />
                                       </li>
                                       <li>
-                                        <span>上传日期</span>
-                                        <input type="date" />
+                                         <input type="submit" name="btn" id="btn" value="修改" class="" />
                                       </li>
-                                  </ul>
-                                  <!--cont-->
-                                  <ul class="houtai-footer-content-ul2 clearfix">
                                       <li>
-                                        <input type="submit" name="btn" id="btn" value="查询" class="" />
-                                     </li>
-                                     <li>
-                                        <input type="submit" name="btn" id="btn" value="新增" class="" />
-                                     </li>
-                                     <li>
-                                        <input type="submit" name="btn" id="btn" value="修改" class="" />
-                                     </li>
-                                     <li>
-                                        <input type="submit" name="btn" id="btn" value="删除" class="" />
-                                     </li>
-                                  </ul>
-                                  <!--bottom-->
-                                  <ul class="houtai-footer-content-ul3 clearfix">
-                                      <li class="ul3-li">附件名称</li>
-                                      <li class="ul3-li">上传日期</li>
-                                      <li class="ul3-li">上传人</li>
-                                      <li class="ul3-li">文件类型</li>
-                                      <li class="ul3-li">文件大小(K)</li>
-                                      <li class="ul3-li">操作</li>
-                                  </ul>
-                                  <div class="houtai-footer-content-ct">无符合条件的记录！</div>
-                                  <ul class="houtai-footer-content-ul4 clearfix">
-                                      <li class="ul4-li">
-                                            <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+                                         <input type="submit" name="btn" id="btn" value="删除" class="" />
                                       </li>
-                                      <li class="ul4-li">
-                                            <input type="button" value="上一页" class="houtai-footer-content-btn1" />
-                                      </li>
-                                      <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
-                                      <li class="ul4-li">
-                                            <input type="button" value="下一页" class="houtai-footer-content-btn2" />
-                                      </li>
-                                      <li class="ul4-li">
-                                            <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
-                                      </li>
-                                      <li class="ul4-li">
-                                            <input type="text" value="0" class="houtai-footer-content-btn4" />
-                                      </li>
-                                      <li class="ul4-li">
-                                        <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
-                                      </li>
-                                      <li class="ul4-li">
-                                        每页
-                                        <input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />  
-                                        行
-                                      </li>
-                                  </ul>
-                            </div> 
+                                   </ul>
+                                   bottom
+                                   <ul class="houtai-footer-content-ul3 clearfix">
+                                       <li class="ul3-li">附件名称</li>
+                                       <li class="ul3-li">上传日期</li>
+                                       <li class="ul3-li">上传人</li>
+                                       <li class="ul3-li">文件类型</li>
+                                       <li class="ul3-li">文件大小(K)</li>
+                                       <li class="ul3-li">操作</li>
+                                   </ul>
+                                   <div class="houtai-footer-content-ct">无符合条件的记录！</div>
+                                   <ul class="houtai-footer-content-ul4 clearfix">
+                                       <li class="ul4-li">
+                                             <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+                                       </li>
+                                       <li class="ul4-li">
+                                             <input type="button" value="上一页" class="houtai-footer-content-btn1" />
+                                       </li>
+                                       <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
+                                       <li class="ul4-li">
+                                             <input type="button" value="下一页" class="houtai-footer-content-btn2" />
+                                       </li>
+                                       <li class="ul4-li">
+                                             <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
+                                       </li>
+                                       <li class="ul4-li">
+                                             <input type="text" value="0" class="houtai-footer-content-btn4" />
+                                       </li>
+                                       <li class="ul4-li">
+                                         <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
+                                       </li>
+                                       <li class="ul4-li">
+                                         每页
+                                         <input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />  
+                                         行
+                                       </li>
+                                   </ul>
+                             </div> 
+                             --> 
                         </li>
                         <li>
                             <a href="javascript:;">授权管理</a>
                             <!--授权管理目录-->
+                            <!-- 
                             <div class="houtai-footer-content2">
                                 <h5>输入查询条件</h5>
                                 <ul class="houtai-footer-content2-ul clearfix">
@@ -365,7 +497,7 @@
                                             <td>定价单查看</td>
                                         </tr>
                                     </table>  
-                                    <!--2.)caption标签的标题-->  
+                                    2.)caption标签的标题  
                                     <table border="none" cellspacing="0" cellpadding="0">  
                                         <tr class="tr1">  
                                             <td>被授权人员</td>  
@@ -411,11 +543,13 @@
                                     </li>
                               </ul>
                             </div>
+                             -->
                         </li>
-                         <li>
+                        <li>
                             <a href="javascript:;">最新提醒</a>
                             <!--最新提醒-->
-                            <div class="houtai-footer-content3">
+                            <!--
+                             <div class="houtai-footer-content3">
                                    <h5>输入查询条件</h5>
                                    <ul class="houtai-footer-content3-ul clearfix">
                                         <li><span>标题</span><input type="text" /></li>
@@ -528,15 +662,42 @@
                                         </li>
                                    </ul>
                             </div>
+                             -->
                         </li>
                     </ul>
                 </li>
                 <li class="houtai-flex"><a href="javascript:;">退出系统</a></li>
-            </ul>
-           
+            </ul>  
         </div>
-         <script>
-            $()
-        </script>
     </body>
+     <!-- <script>
+        $(document).ready(function(){
+            $(".cascade_drop_down").change(
+                function () {
+                    var name = $(this).attr("name") + "_next";
+                    var next = $("#" + name).val();
+                    if (next == null || next == '') {
+                        return;
+                    }
+                    $("#" + next).empty();
+     
+                    $.ajax({
+                        type:'post',
+                        url: $(this).val() + '.txt',
+                        data:'name=' + name + '&val=' + $(this).val(),
+                        dataType:'text',
+                        success:function(msg){
+                            ops = msg.split("\n");
+                            for (i = 0; i < ops.length; i++) {
+                                $("#" + next).append(ops[i]);
+                            }
+                        },
+                        error:function(){
+                            alert("failed.");
+                        }
+                    });
+                }
+            )
+        });
+         </script> -->
 </html>

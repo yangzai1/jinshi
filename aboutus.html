@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
         
-    <title>金实盈信手机端后台</title>
+    <title>金实盈信移动端</title>
         
     <!-- [loading stylesheets] -->    
     <link type="text/css" rel="stylesheet" href="css/style.css" />      
@@ -106,7 +106,6 @@
                             <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
-                
                 </ul> <!-- .menu -->
                 
             </section> <!-- #menu-wrapper -->
@@ -116,21 +115,25 @@
                 <section id="header">
                 
                     <div id="header-left">
-                        <a href="#" id="a-menu"><img src="img/icons/menu.png" alt="menu" /></a>
+                        <a href="#" id="a-menu">
+                            <img src="img/icons/menu.png" alt="menu" />
+                        </a>
                     </div>
                     
                     <div id="header-title">
-                        <h1>关于我们</h1>
+                        <h1>金实盈信</h1>
                     </div>
                     
                     <div id="header-right">
-                        <a href="#" id="header-search-link"><img src="img/icons/share.png" alt="Search" /></a>
+                        <a href="#" id="header-search-link">
+                            <img src="img/icons/share.png" alt="Search" />
+                        </a>
                     </div>
                     
                 </section> <!-- #header --> 
             
         		<section id="content">
-            
+                    <!--
                     <div class="wrapper">
                         
                         <h2>关于我们</h2>
@@ -165,20 +168,343 @@
                             <td colspan="4"><img src="img/icons/small-home.png" alt="" /><span>12345 Street Some Lane, New York</span></td>
                         </tr>        
                     </table>
-                
+                     -->
+                    
                 </section> <!-- #content -->
-            
-            	<section id="footer">
+
+            	<!--<section id="footer">
+                
                     <div id="footer-left">
                         <span>Powered by jq22.com Copyright &copy; 2007 - 2014</span>
                     </div>
                     
                     <div id="footer-right">
                         <span>www.jq22.com</span>
-                    </div>    
-                </section> <!-- #footer -->
-                
+                    </div> 
+                </section>-->  <!-- #footer -->
             </section> <!-- #content-wrapper -->
+            <div class="wrapper-kong"></div> 
     	</section> <!-- #page-wrapper -->
+        
+        <div class="houtai-footer1"></div>
+        <div class="houtai-footer">
+            <ul class="houtai-box">
+                <li class="houtai-flex"><a href="javascript:;">客户管理</a></li>
+                <li class="houtai-flex"><a href="javascript:;">系统管理</a></li>
+                <li class="houtai-flex">
+                     <a href="javascript:;">个人管理</a>
+                     <!--二级-->
+                     <ul class="houtai-flex-ul3">
+                        <li id="on">
+                            <a href="javascript:;">修改密码</a>
+                            <!--修改密码-->
+                            <div id="pass">
+                                <ul>
+                                    <li>
+                                        <h3 class="pass-p">修改密码</h3>
+                                    </li>
+                                    <li>
+                                         原始密码：<input type="password" name="passy" id="passwords" class="" />
+                                         <span>*请输入正确密码</span>
+                                    </li>
+                                    <li>
+                                        新&nbsp密&nbsp码&nbsp：<input type="password" name="passx" id="passwordx" class="" />
+                                        <span>*请输入规范的密码格式</span>
+                                    </li>
+                                    <li>
+                                        确认密码：<input type="password" name="passq" id="passwordq" class="" />
+                                        <span>两次密码输入不一样</span>
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="btn" id="btn" value="确认提交" class="" />
+                                        <p>*1.密码6~16个字符，包括字母、数字、特殊符号，区分大小写。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">文件管理</a>
+                            <!--文件目录-->
+                            <div id="houtai-footer-content">
+                                  <h5 class="">请输入查询条件</h5>
+                                  <hr/>
+                                  <!--top-->
+                                  <ul class="houtai-footer-content-ul clearfix">
+                                      <li>
+                                        <span>附件名称</span>
+                                        <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+                                      </li>
+                                      <li>
+                                        <span>附件名称</span>
+                                        <input id="username" name="username" type="text" placeholder="  请输入附件名称" value="" />
+                                      </li>
+                                      <li>
+                                        <span>上传日期</span>
+                                        <input type="date" />
+                                      </li>
+                                  </ul>
+                                  <!--cont-->
+                                  <ul class="houtai-footer-content-ul2 clearfix">
+                                      <li>
+                                        <input type="submit" name="btn" id="btn" value="查询" class="" />
+                                     </li>
+                                     <li>
+                                        <input type="submit" name="btn" id="btn" value="新增" class="" />
+                                     </li>
+                                     <li>
+                                        <input type="submit" name="btn" id="btn" value="修改" class="" />
+                                     </li>
+                                     <li>
+                                        <input type="submit" name="btn" id="btn" value="删除" class="" />
+                                     </li>
+                                  </ul>
+                                  <!--bottom-->
+                                  <ul class="houtai-footer-content-ul3 clearfix">
+                                      <li class="ul3-li">附件名称</li>
+                                      <li class="ul3-li">上传日期</li>
+                                      <li class="ul3-li">上传人</li>
+                                      <li class="ul3-li">文件类型</li>
+                                      <li class="ul3-li">文件大小(K)</li>
+                                      <li class="ul3-li">操作</li>
+                                  </ul>
+                                  <div class="houtai-footer-content-ct">无符合条件的记录！</div>
+                                  <ul class="houtai-footer-content-ul4 clearfix">
+                                      <li class="ul4-li">
+                                            <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+                                      </li>
+                                      <li class="ul4-li">
+                                            <input type="button" value="上一页" class="houtai-footer-content-btn1" />
+                                      </li>
+                                      <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
+                                      <li class="ul4-li">
+                                            <input type="button" value="下一页" class="houtai-footer-content-btn2" />
+                                      </li>
+                                      <li class="ul4-li">
+                                            <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
+                                      </li>
+                                      <li class="ul4-li">
+                                            <input type="text" value="0" class="houtai-footer-content-btn4" />
+                                      </li>
+                                      <li class="ul4-li">
+                                        <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
+                                      </li>
+                                      <li class="ul4-li">
+                                        每页
+                                        <input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />  
+                                        行
+                                      </li>
+                                  </ul>
+                            </div> 
+                        </li>
+                        <li>
+                            <a href="javascript:;">授权管理</a>
+                            <!--授权管理目录-->
+                            <div class="houtai-footer-content2">
+                                <h5>输入查询条件</h5>
+                                <ul class="houtai-footer-content2-ul clearfix">
+                                    <li>授权资源:</li>
+                                    <li><input type="text" placeholder="授权资源名称" name="Resources" /></li>
+                                    <li>被授权人:</li>
+                                    <li><input type="text" placeholder="被授权人员" name="personnel" /></li>
+                                </ul>
+                                <ul class="houtai-footer-content2-ul2 clearfix">
+                                    <li>
+                                        <input type="button" value="查询" name="houtai-footer-content2-ul2-btn" />
+                                    </li>
+                                    <li>
+                                        <input type="button" value="重置" name="houtai-footer-content2-ul2-btn" />
+                                    </li>
+                                    <li>
+                                        <input type="button" value="授权配置" name="houtai-footer-content2-ul2-btn" />
+                                    </li>
+                                </ul>
+                                <div class="houtai-footer-content2-ul2-div clearfix">
+                                    <table border="none" cellspacing="0" cellpadding="0">  
+                                        <tr class="tr1">
+                                            <td>授权资源名称</td>
+                                        </tr>
+                                        <tr>
+                                            <td>客户信息查询</td>
+                                        </tr>
+                                        <tr class="tr2">
+                                            <td>客户定价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>存贷款到期提醒</td>
+                                        </tr>
+                                        <tr class="tr2">
+                                            <td>定价单查看</td>
+                                        </tr>
+                                    </table>  
+                                    <!--2.)caption标签的标题-->  
+                                    <table border="none" cellspacing="0" cellpadding="0">  
+                                        <tr class="tr1">  
+                                            <td>被授权人员</td>  
+                                        </tr>
+                                        <tr>  
+                                            <td>微贷客户经理,沧州农商银行管理员</td>  
+                                        </tr>
+                                        <tr class="tr2">  
+                                            <td>沧州农商银行客户经理</td>  
+                                        </tr>
+                                        <tr>  
+                                            <td>沧州农商银行客户经理,沧州农商行运河支行市场部负责人</td>  
+                                        </tr>
+                                        <tr class="tr2">  
+                                            <td>12497186,沧州农商银行管理员</td>  
+                                        </tr>
+                                    </table>  
+                                </div>
+                                <ul class="houtai-footer-content-ul4 clearfix">
+                                    <li class="ul4-li">
+                                        <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+                                    </li>
+                                    <li class="ul4-li">
+                                        <input type="button" value="上一页" class="houtai-footer-content-btn1" />
+                                    </li>
+                                    <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
+                                    <li class="ul4-li">
+                                        <input type="button" value="下一页" class="houtai-footer-content-btn2" />
+                                    </li>
+                                    <li class="ul4-li">
+                                        <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
+                                    </li>
+                                    <li class="ul4-li">
+                                        <input type="text" value="0" class="houtai-footer-content-btn4" />
+                                    </li>
+                                    <li class="ul4-li">
+                                        <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
+                                    </li>
+                                    <li class="ul4-li">
+                                        每页
+                                        <input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />  
+                                        行
+                                    </li>
+                              </ul>
+                            </div>
+                        </li>
+                         <li>
+                            <a href="javascript:;">最新提醒</a>
+                            <!--最新提醒-->
+                            <div class="houtai-footer-content3">
+                                   <h5>输入查询条件</h5>
+                                   <ul class="houtai-footer-content3-ul clearfix">
+                                        <li><span>标题</span><input type="text" /></li>
+                                        <li><span>作者</span><input type="text" /></li>
+                                   </ul> 
+                                   <ul class="houtai-footer-content3-ul clearfix">
+                                        <li><label for="meeting"><span>开始日期</span></label><input id="meeting" type="date" value="2017-03-22"/></li>
+                                        <li><label for="meeting"><span>截至日期</span></label><input id="meeting" type="date" value="2017-03-22"/></li>
+                                   </ul> 
+                                   <ul class="houtai-footer-content3-ul2 clearfix">
+                                        <li><input type="button" value="查询" /></li>
+                                        <li><input type="button" value="新增" /></li>
+                                        <li><input type="button" value="修改" /></li>
+                                        <li><input type="button" value="删除" /></li>
+                                        <li><input type="button" value="查看" /></li>
+                                        <li><input type="button" value="树状结构" /></li>
+                                   </ul>
+                                   <div class="houtai-footer-content3-div clearfix">
+                                        <ul class="houtai-footer-content-div-ul clearfix">
+                                          <li class="div-ul-li">标题</li>
+                                          <li class="div-ul-li">作者</li>
+                                          <li class="div-ul-li">日期</li>
+                                          <li class="div-ul-li">状态</li>
+                                        </ul>
+                                        <div class="houtai-footer-content3-div-biao">
+                                            <ul class="content3-fix-box clearfix">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>未读</li>
+                                            </ul>
+                                            <ul class="content3-fix-box">
+                                                <li class="fix-tr"><a href="javascript:;">定价单审批通过...</a></li>
+                                                <li class="fix-tr"><a href="javascript:;">sysadmin</a></li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>2017-03-18 16:40:53</li>
+                                                <li class="fix-tr"><a href="javascript:;"></a>已读</li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                   <ul class="houtai-footer-content-ul4 clearfix">
+                                        <li class="ul4-li">
+                                            <input type="button" value=" 首 页 " class="houtai-footer-content-btn" />
+                                        </li>
+                                        <li class="ul4-li">
+                                            <input type="button" value="上一页" class="houtai-footer-content-btn1" />
+                                        </li>
+                                        <li class="ul4-li">第<span>1</span>页 &nbsp 共<span>1</span>页</li>
+                                        <li class="ul4-li">
+                                            <input type="button" value="下一页" class="houtai-footer-content-btn2" />
+                                        </li>
+                                        <li class="ul4-li">
+                                            <input type="button" value=" 尾 页 " class="houtai-footer-content-btn3" />
+                                        </li>
+                                        <li class="ul4-li">
+                                            <input type="text" value="0" class="houtai-footer-content-btn4" />
+                                        </li>
+                                        <li class="ul4-li">
+                                            <input type="button" value=" 跳 转 " class="houtai-footer-content-btn5" />
+                                        </li>
+                                        <li class="ul4-li">
+                                            每页<input id="ul4-li-name" name="ul4-li-name" type="text" placeholder="50" value="" />行
+                                        </li>
+                                   </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="houtai-flex"><a href="javascript:;">退出系统</a></li>
+            </ul>
+
+        </div>
     </body>
 </html>

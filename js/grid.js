@@ -3,9 +3,6 @@
 *
 * latest version and complete README available on Github:
 * https://github.com/louisremi/jquery-smartresize/blob/master/jquery.debouncedresize.js
-*
-* Copyright 2011 @louis_remi
-* Licensed under the MIT license.
 */
 var $event = $.event,
 $special,
@@ -43,16 +40,17 @@ $special = $event.special.debouncedresize = {
 // https://github.com/desandro/imagesloaded
 
 // $('#my-container').imagesLoaded(myFunction)
-// execute a callback when all images have loaded.
-// needed because .load() doesn't work on cached images
+// execute a callback when all images have loaded.（当所有图像加载时执行回调。）
+// needed because .load() doesn't work on cached images（不工作的缓存图像）
 
-// callback function gets image collection as argument
+// callback function gets image collection as argument（回调函数获取图像集合作为参数）
 //  this is the container
 
 // original: MIT license. Paul Irish. 2010.
 // contributors: Oren Solomianik, David DeSandro, Yiannis Chatzikonstantinou
 
-// blank image data-uri bypasses webkit log warning (thx doug jones)
+// blank image data-uri bypasses webkit log warning
+//（空白图像数据的URI绕过WebKit的日志警告）
 var BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
 $.fn.imagesLoaded = function( callback ) {
@@ -64,7 +62,7 @@ $.fn.imagesLoaded = function( callback ) {
 		proper = [],
 		broken = [];
 
-	// Register deferred callbacks
+	// Register deferred callbacks（登录延时回调）
 	if ($.isPlainObject(callback)) {
 		$.each(callback, function (key, value) {
 			if (key === 'callback') {
@@ -93,7 +91,7 @@ $.fn.imagesLoaded = function( callback ) {
 	}
 
 	function imgLoaded( img, isBroken ) {
-		// don't proceed if BLANK image, or image is already loaded
+		// don't proceed if BLANK image, or image is already loaded（如果空白图像，或图像已加载，不要继续）
 		if ( img.src === BLANK || $.inArray( img, loaded ) !== -1 ) {
 			return;
 		}

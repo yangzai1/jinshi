@@ -16,7 +16,7 @@ documentReady(function() {
 	if((readyTime - executionTime) < 3000) hideAddressBar(true);
 	
 	
-	// -------- Search box hover active state end ------ //
+	// -------- Search box hover active state end（搜索） ------ //
 	
 	// Toggle script
 	

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     
     <!-- [portable options] -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
         
     <title>个人贷款定价</title>
@@ -187,21 +187,80 @@
                                     </select>
                                 </label></br>
 
-                               机&nbsp构&nbsp名&nbsp：<input type="text" value="" name="id" placeholder="机构名*" required /></br>
+                               机&nbsp构&nbsp名&nbsp：<input type="text" value="" name="id" placeholder="Q联社，B县社*" required /></br>
                                <label id="lblSelect">
-                                    使用币种：<select id="selectPointOfInterest" title="Select points of interest nearby">
-                                        <option>CNY</option>
-                                        <option>HKD</option>
-                                        <option>EUR</option>
-                                        <option>TWD</option>
-                                        <option>KRW</option>
-                                    </select>
+                                使用币种：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                                    <option>CNY</option>
+                                    <option>HKD</option>
+                                    <option>EUR</option>
+                                    <option>TWD</option>
+                                    <option>KRW</option>
+                                </select>
                                 </label></br>
                             贷款额(元)：<input type="text" value="" name="name" placeholder="贷款额(元)*" required /></br>
-                            证件号码：<input type="text" value="" name="id" placeholder="证件号码*" required /></br>
-                            联系电话：<input type="text" value="" name="name" placeholder="联系电话*" required /> </br>  
-                            移动电话：<input type="text" value="" name="name" placeholder="移动电话*" required /> </br>        
+                            期限(月)&nbsp：<input type="text" value="" name="id" placeholder="还款期限*" required /></br>
+                            &nbsp起息日&nbsp：<input id="meeting" type="date" value="2017-01-13"/></br>
+                            <label id="lblSelect">
+                            浮动利率：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                                    <option>浮动利率</option>
+                                    <option>浮动利率2</option>
+                                    <option>浮动利率3</option>
+                                    <option>浮动利率4</option>
+                                    <option>浮动利率5</option>
+                                </select>
+                                </label></br>
+                            <label id="lblSelect">
+                            利率调整周期(月)：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                                    <option>1M</option>
+                                    <option>2M</option>
+                                    <option>3M</option>
+                                    <option>4M</option>
+                                    <option>5M</option>
+                                </select>
+                                </label></br>       
                            信息备注: <textarea name="message" placeholder="信息备注*" required ></textarea></br> 
+                            </div>
+                            <input type="submit" value="提交" />
+                        </form>
+                    </div>
+                    <div class="wrapper-div-form1">
+                        <h2>还款方式</h2>
+                        <form action="#" method="get">
+                            <div class="wrapper-form-div">
+                                <label id="lblSelect">
+                                还款方式：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                                        <option>等额本金</option>
+                                        <option>等额本金2</option>
+                                        <option>等额本金3</option>
+                                        <option>等额本金4</option>
+                                        <option>等额本金5</option>
+                                    </select>
+                                    </label></br>
+                                <label id="lblSelect">
+                                还款频率：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                                        <option>1M</option>
+                                        <option>2M</option>
+                                        <option>3M</option>
+                                        <option>4M</option>
+                                        <option>5M</option>
+                                    </select>
+                                    </label></br>       
+                               信息备注: <textarea name="message" placeholder="信息备注*" required ></textarea></br> 
+                            </div>
+                            <input type="submit" value="提交" />
+                        </form>
+                    </div>
+                    <div class="wrapper-div-form1">
+                        <h2>抵押品信息</h2>
+                        <form action="#" method="get">
+                            <div class="wrapper-form-div">
+                                     
+                                <textarea name="message" placeholder="暂无信息*" required ></textarea></br>
+                                <input type="button" value="新增" class="wrapper-div-form1-btn1" />
+                                <input type="button" value="删除" class="wrapper-div-form1-btn1" />
+                                <input type="button" value="查询" class="wrapper-div-form1-btn1" />
+                                <input type="button" value="修改" class="wrapper-div-form1-btn1" /> 
+
                             </div>
                             <input type="submit" value="提交" />
                         </form>

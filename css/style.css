@@ -559,7 +559,7 @@ form { width: 100%; overflow: hidden; }
 	width: 100%;
 	padding-top: 28px;
 	background: #7db2e9;
-	height: 100%;
+	/* height: 100%; */
 }
 
 div.wrapper
@@ -611,6 +611,7 @@ article
             position: relative;
             /* width: 300px; */
             margin: 0 auto;
+            margin-bottom: 10px;
             /* margin-left: 10px; */
         }
 
@@ -634,9 +635,17 @@ article
             background: #F9F0DA;
             transition: .3s linear;
             float: left;
+            margin-left: 6px;
         }
         .bar7 input:focus {
             width: 300px;
+        }
+      .bar7 form .search-bar7-form-btn{
+        	width: 76px;
+		    line-height: 25px;
+		    text-align: center;
+		    float: left;
+		    margin: 0 0 6px 6px;
         }
 	/* .content-wrapper-div*/
 	.content-wrapper-div{
@@ -772,13 +781,28 @@ article
                 pointer-events          : none;
             }
 	.wrapper form textarea{
-		margin-left: 75px;
+		margin-left: 60px;
+		text-align: center;
+	}
+	.wrapper form .wrapper-div-form1-btn1{
+		width: 80px;
+		line-height: 20px;
+		border-radius: 10px;
+		text-align: center;
+		float: left;
+		margin:0 0 6px 6px;
+
 	}
 	/* 后加的空标签样式 */
 	.wrapper-kong{
 		height: 48px;
 	}
-
+	.wrapper form #meeting{
+		width: 62%;
+	    border: 1px solid;
+	    line-height: 30px;
+	    margin-bottom: 10px; 
+	}
 
 /* BLOG */
 
@@ -850,6 +874,10 @@ article
 		position: fixed;
 		bottom: 60px;
 		right: 20px;
+	}
+	.houtai-footer-ding a img{
+		width: 20px;
+		height: 20px;
 	}
 /*houtai*/
 	.houtai-footer{

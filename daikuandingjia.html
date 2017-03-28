@@ -17,7 +17,23 @@
 		
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-        
+    <script type="text/javascript">
+      var $ = jQuery.noConflict();
+      $(window).load(function() {
+        $('#slider').flexslider({
+          animation: "slide",
+          directionNav: true,
+          animationLoop: false,
+          controlNav: false, 
+          slideToStart: 1,
+          slideshow: true,
+          animationDuration: 300,
+          start: function(){
+             $('#slider').animate({opacity: 1}, 750);
+          },
+        });
+      });
+    </script>
     </head>
 
     <body>
@@ -27,8 +43,8 @@
         	<section id="menu-wrapper">
             	
                 <div id="menu-search">
-                	<input id="menu-search-input-text" type="text" placeholder="Search..." />
-					<input id="menu-search-input-submit" type="submit" value="" />
+                	<input id="menu-search-input-text" type="text" placeholder="搜索" />
+					        <input id="menu-search-input-submit" type="submit" value="" />
                 </div>
             
                 <ul class="menu">
@@ -64,21 +80,21 @@
                     </li>
                     
                     <li class="icon box"><!-- 公司贷款定价 -->
-                        <a href="javascript:;"><!-- portfolio.html -->
+                        <a href="daikuaishisuan.html"><!-- portfolio.html -->
                           <span class="menu-li-title">对公款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
                     <li class="icon info"><!-- 小微贷款定价 -->
-                        <a href="gerendaikua.html"><!-- aboutus.html -->
+                        <a href="gerendaikuan.html"><!-- aboutus.html -->
                           <span class="menu-li-title">个人贷款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
                     
                     <li class="icon star"><!--系统管理-->
-                        <a href="javascript:;"><!-- www.jq22.com -->
+                        <a href="cunkuandingjia.html"><!-- www.jq22.com -->
                           <span class="menu-li-title">存款顶价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
@@ -103,7 +119,7 @@
                     
                     <div id="header-right">
                         <a href="#" id="header-search-link">
-                            <img src="img/icons/share.png" alt="Search" />
+                            <img src="img/icons/20090903220529485.png" alt="Search" />
                         </a>
                     </div>
                     
@@ -120,9 +136,9 @@
                         <li>定价单号：<span>SHT201612190003160011</span></li>
                         <li>客户名称：<span>对公测试用户6</span></li>
                         <li>客户号：<span>0100822357</span></li>
-                        <li>贷款种类<span>短期农业经济组织抵押贷款</span></li>
-                        <li>金额：<span>10,000,000.00</span></li>
-                        <li>期限：<span>12</span></li>
+                        <li>贷款种类：<span>短期农业经济组织抵押贷款</span></li>
+                        <li>金额(元)：<span>10,000,000.00</span></li>
+                        <li>期限(月)：<span>12</span></li>
                         <li>底线利率(%)：<span>7.14%</span></li>
                         <li>目标利率(%)：<span>7.91%</span></li>
                         <li>优惠利率(%)：<span>7.81%</span></li>
@@ -205,7 +221,7 @@
         <div class="houtai-footer1"></div>
         <div class="houtai-footer">
             <ul class="houtai-box">
-                <li class="houtai-flex"><a href="javascript:;">客户管理</a></li>
+                <li class="houtai-flex"><a href="shouye.html">客户管理</a></li>
                 <li class="houtai-flex"><a href="javascript:;">系统管理</a></li>
                 <li class="houtai-flex">
                      <a href="javascript:;">个人管理</a>
@@ -518,7 +534,7 @@
                         </li>
                                          </ul> -->
                 </li>
-                <li class="houtai-flex"><a href="javascript:;">退出系统</a></li>
+                <li class="houtai-flex"><a href="out.html">退出系统</a></li>
             </ul>
 
         </div>

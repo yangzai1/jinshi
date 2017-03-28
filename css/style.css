@@ -676,6 +676,7 @@ article
 		text-align: center;
 		border-radius: 10px;
 	}
+	.wrapper-div-form1c{height: 800px;}
 	.wrapper form #checkbox{
 		width: 20px;
 		height: 20px;
@@ -792,6 +793,26 @@ article
 		float: left;
 		margin:0 0 6px 6px;
 
+	}
+	#content .content-divc{
+		margin: 0 10px 0 10px;
+		background: #fff;
+		border-radius: 10px;
+	}
+	#content .content-divc h2{
+		text-align: center;
+		background: rgba(0,0,0,0.05);
+	}
+	#content .wrapper-form-div-btng input{
+		width: 80px;
+		line-height: 40px;
+		border-radius: 10px;
+		float: left;
+		margin-bottom: 6px;
+	}
+	#content .wrapper-form-div-btng textarea{
+		text-align: center;
+		width: 100%;
 	}
 	/* 后加的空标签样式 */
 	.wrapper-kong{

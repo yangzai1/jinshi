@@ -21,7 +21,23 @@
 		
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-        
+    <script type="text/javascript">
+            var $ = jQuery.noConflict();
+            $(window).load(function() {
+                $('#slider').flexslider({
+                    animation: "slide",
+                    directionNav: true,
+                    animationLoop: false,
+                    controlNav: false, 
+                    slideToStart: 1,
+                    slideshow: true,
+                    animationDuration: 300,
+                    start: function(){
+                         $('#slider').animate({opacity: 1}, 750);
+                    },
+                });
+            });
+      </script>   
     </head>
 
     <body>
@@ -31,7 +47,7 @@
         	<section id="menu-wrapper">
             	
                 <div id="menu-search">
-                	<input id="menu-search-input-text" type="text" placeholder="Search..." />
+                	<input id="menu-search-input-text" type="text" placeholder="搜索" />
 					<input id="menu-search-input-submit" type="submit" value="" />
                 </div>
             
@@ -58,7 +74,7 @@
                             </li>
 
                             <li>
-                                <a href="shouye.html">
+                                <a href="daikuandingjia.html">
                                     <span class="menu-li-title">贷款定价</span>
                                     <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                                 </a>
@@ -68,7 +84,7 @@
                     </li>
                     
                     <li class="icon box"><!-- 公司贷款定价 -->
-                        <a href="javascript:;"><!-- portfolio.html -->
+                        <a href="daikuanshisuan.html"><!-- portfolio.html -->
                           <span class="menu-li-title">对公款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
@@ -82,8 +98,8 @@
                     </li>
                     
                     <li class="icon star"><!--系统管理-->
-                        <a href="javascript:;"><!-- www.jq22.com -->
-                          <span class="menu-li-title">存款顶价</span>
+                        <a href="cunkuandingjia.html"><!-- www.jq22.com -->
+                          <span class="menu-li-title">存款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
@@ -251,7 +267,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="houtai-flex"><a href="index.html">退出系统</a></li>
+                <li class="houtai-flex"><a href="out.html">退出系统</a></li>
             </ul>  
         </div>
     </body>

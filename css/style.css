@@ -280,13 +280,14 @@ input[type="text"], textarea
 	padding: 8px 10px;
 	margin: 0;
 	margin-bottom: 10px;
-	padding: 10px;
-	width: 60%;
+	padding: 7px;
+	width: 160px;
+	line-height: 18px;
 }
 
 input[type="button"], input[type="submit"]
 {
-	background: #000099;
+	background: #6cf;
 	border: none;
 	padding: 8px 10px;	
 	color: #fff;
@@ -294,6 +295,7 @@ input[type="button"], input[type="submit"]
 	cursor: pointer;
 	margin: 0;
 	border-radius: 10px;
+	width: 160px;
 	
 }
 
@@ -332,7 +334,7 @@ input[type="button"]
 	border: none;
 }
 
-textarea { height: 100px; }
+textarea { height: 100px; border: none;}
 label { font-weight: bold; }
 form { width: 100%; overflow: hidden; }
 
@@ -584,7 +586,8 @@ p + h6 { margin-top: 1em; }
 
 article
 {
-	margin: 0.5em 0;	
+	margin: 0.5em 0;
+	height: 620px;	
 }
 
 	.post-date
@@ -627,11 +630,15 @@ article
         }
 
         .bar7 form {
-            height: 66px;
+            height: 50px;
+        }
+        .bar7 form .text1{
+        	width: 160px;
+        	line-height: 24px;
         }
         .bar7 input {
-            border-radius: 42px;
-            border: 2px solid #324B4E;
+            border-radius: 10px;
+            border: 1px solid #324B4E;
             background: #F9F0DA;
             transition: .3s linear;
             float: left;
@@ -641,8 +648,8 @@ article
             width: 300px;
         }
       .bar7 form .search-bar7-form-btn{
-        	width: 76px;
-		    line-height: 25px;
+        	width: 58px;
+		    line-height: 15px;
 		    text-align: center;
 		    float: left;
 		    margin: 0 0 6px 6px;
@@ -676,14 +683,31 @@ article
 		text-align: center;
 		border-radius: 10px;
 	}
-	.wrapper-div-form1c{height: 800px;}
+	.wrapper-div-form1c span: {
+		height: 800px;
+		color: #000;
+	} 
+	.wrapper-div-form1c .chaxun{
+		width: 180px;
+		height: 40px;
+		float: left;
+		margin-left: 90px;
+		background: #6cf;
+	}
 	.wrapper form #checkbox{
 		width: 20px;
 		height: 20px;
+		margin-bottom: 20px;
 		border: 1px solid #000;
 	} 
 	.wrapper-form-div{
 		margin-left: 10px;
+	}
+	.wrapper-form-div #meeting{
+	    width: 160px;
+	    border: 1px solid #000;
+	    line-height: 20px;
+	    margin-bottom: 18px;
 	}
             /* SELECT W/IMAGE客户信息 */
             select#selectTravelCity
@@ -724,9 +748,9 @@ article
             /*SELECT W/DOWN-ARROW*/
             select#selectPointOfInterest
             {
-               width                    : 185px;
-               height                   : 40px;
-               line-height              : 40px;
+               width                    : 160px;
+               height                   : 24px;
+               line-height              : 24px;
                padding-right            : 20px;
                text-indent              : 4px;
                text-align               : left;
@@ -771,10 +795,10 @@ article
                 right                   : 0;
                 /* bottom                  : 0; */
                 width                   : 20px;
-                line-height             : 40px;
+                line-height             : 24px;
                 vertical-align          : middle;
                 text-align              : center;
-                background              : #000099;
+                background              : #6cf;
                 color                   : #fefefe;
                -moz-border-radius       : 0 6px 6px 0;
                -webkit-border-radius    : 0 6px 6px 0;
@@ -782,8 +806,9 @@ article
                 pointer-events          : none;
             }
 	.wrapper form textarea{
-		margin-left: 60px;
+		/* margin-left: 60px; */
 		text-align: center;
+		width: 100%;
 	}
 	.wrapper form .wrapper-div-form1-btn1{
 		width: 80px;
@@ -791,7 +816,7 @@ article
 		border-radius: 10px;
 		text-align: center;
 		float: left;
-		margin:0 0 6px 6px;
+		margin:0 0 6px 136px;
 
 	}
 	#content .content-divc{
@@ -819,9 +844,9 @@ article
 		height: 48px;
 	}
 	.wrapper form #meeting{
-		width: 62%;
+		width: 160px;
 	    border: 1px solid;
-	    line-height: 30px;
+	    line-height: 24px;
 	    margin-bottom: 10px; 
 	}
 
@@ -913,37 +938,43 @@ article
 	.houtai-box li{
 		text-align: center;
 		color: #fff;
-		line-height: 50px;
+		line-height: 20px;
 		border-right: 1px solid rgba(0,0,0,0.3);
 	}
 	.houtai-box li a{
 		color: #fff;
 		font-weight: bold;
 	}
-/*二级菜单*/
-	.houtai-flex-ul3{
-		width: 118px;
-		height: 160px;
-		position: absolute;
-		left: 206px;
-		bottom: 0;
-		display: none;
+	.houtai-box li a img{
+		width: 20px;
+		height: 20px;
+		margin-top: 5px;
 	}
-	.houtai-flex-ul3 li{
-		height: 40px;
-		color: #fff;
-		font-weight: bold;
-		background:#007bb7; 
-	}
+/* content */
+.wrapper .prologue{
+	padding: 10px;
+	padding: 50px 10px 10px 10px;
+	margin-bottom: 50px;
+}
+#content-wrapper .wrapper{
+	height: 100%;
+}
 
-    .table-responsive th, td{
-        font-size: 12px;
-        text-align: center;
-    }
-    #slider .slider-div1{
-        margin: 5px 10px 10px 10px;
-    }
-    /* out退出 */
+/* daikuanshisuan */
+#content .content-div form input{
+	width: 160px;
+}
+/* #content .wrapper-divge{
+	height: 100%;
+} */
+#content-wrapper .wrapper-div-form1 .btn1{
+	width: 160px;
+	line-height: 18px;
+	margin-left: 106px;
+	margin-bottom: 8px;
+	float: left;
+}
+/* out退出 */
     .content-wrapper-out{
     	margin: 42px;
     	border: 1px solid #fff;
@@ -967,3 +998,4 @@ article
 	    border-radius: 12px;
 	    border: none;
     }
+

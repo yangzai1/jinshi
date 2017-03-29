@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/supersized.css">
         <link rel="stylesheet" href="assets/css/style.css">
-
+        <!-- <script src="assets/js/index.js"></script> -->
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,10 +25,10 @@
 
         <div class="page-container">
             <h1><a href="Javascript:;"></a></h1>
-            <form action="" method="post">
-                <input type="text" name="username" class="username" placeholder="用户名">
+            <form action="" method="get">
+                <input type="text" name="username" class="username" id="username" placeholder="用户名">
                 <input type="password" name="password" class="password" placeholder="密码">
-               <button type="submit"> <a href="shouye.html">提交</a></button>
+                <button type="submit" id="btni"> <!-- <a href="shouye.html" > -->提交<!-- </a> --></button>
                 <div class="error"><span>+</span></div>
             </form>
             <!--<div class="connect">
@@ -42,10 +42,58 @@
 		
         <!-- Javascript -->
         <script src="assets/js/jquery-1.8.2.min.js"></script>
-        <script src="assets/js/supersized.3.2.7.min.js"></script>
-        <script src="assets/js/supersized-init.js"></script>
+        <!-- <script src="assets/js/supersized.3.2.7.min.js"></script> -->
+        <!-- <script src="assets/js/supersized-init.js"></script> -->
         <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/index.js">
+        /* $(function (){
+            $('#btni').on('click',function (){
+            
+                $.ajax({
+                    url:'http://localhost:8080/CNB_RPM_UI/servlet/PhoneServlet',
+                    data:{class:"userSignOn",actorname:"860030013",password:"123456"},
+                    dataType:'json',
+                    cache:false,
+                    success:(r)=>{
+                        alert(r);
+                        if (r.status){
+                            
+                            alert('登陆成功');
+                        }else{
+                            alert(r.message);
+                        }
+                    },error:(r)=>{
+                        alert('用户名或者密码错误！');
+                    }
 
+                });
+
+            });
+         });*/
+        /*$(()=>{
+            
+            $('#btni').on('click',()=>{
+
+                $.ajax({
+                    url:'rpm/servlet/PhoneServlet',
+                    dataType:'json',
+                    data:{ "class":userSignOn,"actorname":860030013,"password":123456},
+                    success:(r)=>{
+                        alert(r);
+                        if (r.status){
+                            console.log(r);
+                            alert('成功');
+                        }else{
+                            alert(r.message);
+                        }
+                    },error:(r)=>{
+                        alert('用户名或者密码错误！');
+                    }
+                });
+            });
+        });*/
+  
+        </script>
     </body>
 
 </html>
